@@ -17,6 +17,7 @@ Gerador de estruturas de mesa em metalon (tubo quadrado/retangular), com preview
 - **Plano de corte**: barras de 2 m por padrão, com opção de 1; 1,5; 3; 6 m ou outro tamanho. Desconta a espessura do disco, o refilo e a perda do primeiro corte a 45°, emenda as peças maiores que a barra e desconta as barras que você já tem.
 - **Custos**: preço por barra de cada perfil, sapatas, tampas de ponta, consumíveis e tampo.
 - **Extras**: vista explodida, animação de montagem com faíscas de solda, cotas, vistas (3D/frente/lado/topo), link compartilhável (o projeto fica salvo na URL) e impressão/PDF.
+- **Link do projeto**: abrir ou colar o link de outra pessoa carrega o projeto dela sem apagar o seu. O seu projeto só é substituído quando você edita o do link, e até lá o botão "Voltar ao meu projeto" traz o seu de volta.
 
 As medidas das peças com 45° são sempre na **ponta maior**.
 

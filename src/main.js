@@ -1,7 +1,7 @@
 import './styles/main.css';
 import { createStore } from './state/store.js';
 import { DEFAULTS } from './state/defaults.js';
-import { loadState, saveState } from './state/persist.js';
+import { loadState, readLink, readLocal, saveState, sameProject } from './state/persist.js';
 import { derive } from './model/index.js';
 import { Viewer } from './three/viewer.js';
 import { Sidebar } from './ui/sidebar.js';
@@ -13,7 +13,14 @@ import { profileLabel } from './model/catalog.js';
 
 const $ = (sel) => document.querySelector(sel);
 
-const store = createStore(loadState());
+const initial = loadState();
+const store = createStore(initial.state);
+
+// Projeto aberto por link: fica só na URL até a primeira edição, para não apagar o
+// projeto que o visitante tinha salvo neste navegador.
+let viewingLink = initial.source === 'link';
+// Verdadeiro enquanto o próprio app troca o projeto (link colado, voltar): não é edição.
+let applying = false;
 const viewer = new Viewer($('#viewport'));
 const sidebar = new Sidebar($('#controls'), store);
 
@@ -73,7 +80,7 @@ const toast = (msg) => {
 };
 
 $('#btn-link').addEventListener('click', async () => {
-  saveState(store.get());
+  saveState(store.get(), { local: !viewingLink });
   try {
     await navigator.clipboard.writeText(location.href);
     toast('Link do projeto copiado');
@@ -151,10 +158,15 @@ function render(first = false) {
   $('#hud-warn').classList.toggle('is-on', current.warnings.length > 0);
   $('#hud-warn').title = current.warnings.join('\n');
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => saveState(state), 300);
+  saveTimer = setTimeout(() => saveState(state, { local: !viewingLink }), 300);
 }
 
 store.subscribe(() => {
+  if (viewingLink && !applying) {
+    // primeira edição: o projeto do link passa a ser o do visitante
+    viewingLink = false;
+    hideLinkNotice();
+  }
   if (queued) return;
   queued = true;
   requestAnimationFrame(() => render());
@@ -162,9 +174,64 @@ store.subscribe(() => {
 
 $('#hud-warn').addEventListener('click', () => report.setTab('cortes', true));
 
+// ---- Projeto aberto por link
+const notice = $('#link-notice');
+const backBtn = $('#link-back');
+let noticeTimer;
+
+function showLinkNotice() {
+  const local = readLocal();
+  const canGoBack = Boolean(local) && !sameProject(local, store.get());
+  backBtn.hidden = !canGoBack;
+  notice.hidden = false;
+  notice.classList.remove('is-leaving');
+  clearTimeout(noticeTimer);
+  // sem projeto salvo para onde voltar, o aviso é só informativo: some sozinho
+  if (!canGoBack) noticeTimer = setTimeout(hideLinkNotice, 6000);
+}
+
+function hideLinkNotice() {
+  clearTimeout(noticeTimer);
+  if (notice.hidden || notice.classList.contains('is-leaving')) return;
+  notice.classList.add('is-leaving');
+  setTimeout(() => {
+    notice.hidden = true;
+    notice.classList.remove('is-leaving');
+  }, 250);
+}
+
+// Troca o projeto inteiro sem contar como edição, reenquadra e remonta a mesa.
+function applyProject(state, { fromLink }) {
+  select(null);
+  applying = true;
+  store.replace(state);
+  applying = false;
+  viewingLink = fromLink;
+  // o render está agendado no próximo frame; este callback roda logo depois dele
+  requestAnimationFrame(() => {
+    setView(viewer.view);
+    viewer.rig.playAssembly();
+  });
+}
+
+// Link colado na mesma aba: só o trecho depois do # muda e a página não recarrega.
+window.addEventListener('hashchange', () => {
+  const link = readLink();
+  if (!link || sameProject(link, store.get())) return;
+  applyProject(link, { fromLink: true });
+  showLinkNotice();
+});
+
+backBtn.addEventListener('click', () => {
+  applyProject(readLocal() ?? { ...DEFAULTS }, { fromLink: false });
+  hideLinkNotice();
+});
+$('#link-close').addEventListener('click', hideLinkNotice);
+
 render(true);
 viewer.setView('perspectiva', false);
 requestAnimationFrame(() => {
   document.body.classList.add('is-ready');
   setTimeout(() => viewer.rig.playAssembly(), 450);
+  if (viewingLink) setTimeout(showLinkNotice, 700);
 });

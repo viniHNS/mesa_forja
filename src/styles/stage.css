@@ -190,6 +190,83 @@
   }
 }
 
+/* ---------- Aviso de projeto aberto por link ---------- */
+.link-notice {
+  position: absolute;
+  left: 50%;
+  top: 68px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100% - 32px);
+  padding: 6px 6px 6px 14px;
+  border: 1px solid var(--edge);
+  border-radius: 11px;
+  background: var(--brushed), linear-gradient(180deg, #43474e, #2c2f35);
+  box-shadow: var(--raised), 0 10px 26px rgba(0, 0, 0, 0.45);
+  transform: translateX(-50%);
+  animation: notice-in 0.5s var(--spring);
+}
+
+/* .key define display:flex, que venceria o atributo hidden do botão "Voltar" */
+.link-notice[hidden],
+.link-notice [hidden] {
+  display: none;
+}
+
+.link-notice.is-leaving {
+  animation: notice-out 0.25s ease forwards;
+}
+
+.link-notice .led {
+  background: var(--lcd-text);
+  box-shadow: 0 0 10px var(--lcd-glow), 0 0 2px #fff;
+}
+
+.link-notice-text {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.link-notice .key:not(.key-sq) {
+  flex-direction: row;
+  min-height: 32px;
+  padding: 6px 12px 8px;
+  white-space: nowrap;
+}
+
+.link-notice .key-sq {
+  width: 32px;
+  height: 32px;
+  font-size: 1.3rem;
+}
+
+@keyframes notice-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -14px) scale(0.96);
+  }
+}
+
+@keyframes notice-out {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .link-notice {
+    top: 58px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 /* ---------- Tooltip / toast ---------- */
 .tooltip {
   position: absolute;

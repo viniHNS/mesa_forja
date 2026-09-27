@@ -38,33 +38,53 @@ function sanitize(raw) {
   return s;
 }
 
-export function loadState() {
+/** Projeto que está no link (#m=...), ou null se não há link válido. */
+export function readLink() {
   const hash = location.hash.replace(/^#/, '');
-  if (hash.startsWith('m=')) {
-    try {
-      return sanitize(decode(hash.slice(2)));
-    } catch {
-      /* link inválido: segue para o armazenamento local */
-    }
-  }
+  if (!hash.startsWith('m=')) return null;
   try {
-    const saved = localStorage.getItem(LS_KEY);
-    if (saved) return sanitize(JSON.parse(saved));
+    return sanitize(decode(hash.slice(2)));
   } catch {
-    /* armazenamento indisponível */
+    return null; // link quebrado
   }
-  return { ...DEFAULTS };
 }
 
-export function saveState(state) {
+/** Último projeto salvo neste navegador, ou null se nunca salvou. */
+export function readLocal() {
+  try {
+    const saved = localStorage.getItem(LS_KEY);
+    return saved ? sanitize(JSON.parse(saved)) : null;
+  } catch {
+    return null; // armazenamento indisponível
+  }
+}
+
+/** Estado inicial e de onde ele veio: 'link', 'local' ou 'default'. */
+export function loadState() {
+  const link = readLink();
+  if (link) return { state: link, source: 'link' };
+  const local = readLocal();
+  return local ? { state: local, source: 'local' } : { state: sanitize(null), source: 'default' };
+}
+
+export const sameProject = (a, b) => JSON.stringify(diff(a)) === JSON.stringify(diff(b));
+
+/**
+ * Grava o projeto na URL e, se `local`, também no navegador. Um projeto aberto por link
+ * não passa `local` até o visitante editá-lo: senão abrir o link de outra pessoa apagaria
+ * o projeto que ele tinha salvo.
+ *
+ * replaceState não dispara `hashchange`, então esta escrita nunca é confundida com um
+ * link novo colado na barra de endereço.
+ */
+export function saveState(state, { local = true } = {}) {
   const d = diff(state);
   const hash = Object.keys(d).length ? `#m=${encode(d)}` : '';
   history.replaceState(null, '', location.pathname + location.search + hash);
+  if (!local) return;
   try {
     localStorage.setItem(LS_KEY, JSON.stringify(d));
   } catch {
     /* ignora */
   }
 }
-
-export const shareUrl = () => location.href;
