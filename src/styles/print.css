@@ -1,0 +1,205 @@
+#print-root {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm 12mm;
+  }
+
+  html,
+  body {
+    height: auto;
+    background: #fff;
+    color: #111;
+    font-size: 11pt;
+  }
+
+  .app {
+    display: none !important;
+  }
+
+  #print-root {
+    display: block;
+    color-scheme: light;
+    --text: #111;
+    --text-2: #333;
+    --text-3: #666;
+    --lcd-text: #111;
+    --accent-2: #b24f0d;
+    --accent: #ff7a1a;
+  }
+
+  #print-root * {
+    text-shadow: none !important;
+    animation: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #print-root h1 {
+    margin: 0;
+    font-family: var(--font-label);
+    font-size: 20pt;
+  }
+
+  #print-root h2 {
+    margin: 16px 0 6px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #ff7a1a;
+    font-family: var(--font-label);
+    font-size: 13pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    break-after: avoid;
+  }
+
+  .p-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+
+  .p-head p {
+    margin: 2px 0 0;
+    color: #444;
+  }
+
+  .p-brand {
+    text-align: right;
+    font-family: var(--font-label);
+    font-weight: 700;
+    font-size: 13pt;
+  }
+
+  /* Página 1 (A4 deitado): mesa à esquerda, cortes e custos à direita */
+  .p-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .p-side h2:first-child {
+    margin-top: 0;
+  }
+
+  .p-hero {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: radial-gradient(ellipse at 50% 35%, #f4f4f2, #dcdcd8);
+    break-inside: avoid;
+  }
+
+  .p-hero img {
+    width: 100%;
+    display: block;
+  }
+
+  .p-hero dl {
+    margin: 6px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 14px;
+  }
+
+  #print-root .cut-table,
+  #print-root .cost-table {
+    font-size: 9pt;
+    border-spacing: 0 2px;
+  }
+
+  #print-root .cut-table td,
+  #print-root .cost-table td {
+    padding: 4px 7px;
+  }
+
+  #print-root .cut-table th,
+  #print-root .cost-table th {
+    padding: 2px 7px;
+  }
+
+  #print-root .tag {
+    width: 20px;
+    height: 20px;
+  }
+
+  #print-root .facts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #print-root .facts div {
+    padding: 5px 8px;
+  }
+
+  #print-root .key-left {
+    background: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0 3px, transparent 3px 6px);
+    outline: 1px solid #999;
+  }
+
+  /* Página 2: plano de corte na largura toda */
+  .p-page {
+    break-before: page;
+  }
+
+  .p-page h2 {
+    margin-top: 0;
+  }
+
+  .p-hero dt {
+    font-size: 8.5pt;
+    color: #666;
+  }
+
+  .p-hero dd {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .p-warn p {
+    margin: 6px 0;
+    color: #8a5a00;
+  }
+
+  #print-root .cut-table td,
+  #print-root .cost-table td {
+    background: #f3f3f1;
+  }
+
+  #print-root .cost-table tfoot td {
+    background: #ffe7d4;
+  }
+
+  #print-root .cut-table tr {
+    break-inside: avoid;
+  }
+
+  #print-root .facts div {
+    background: #f3f3f1;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  #print-root .facts dd {
+    color: #111;
+  }
+
+  #print-root .bar {
+    background: #d6d7d9;
+    box-shadow: inset 0 0 0 1px #999;
+  }
+
+  #print-root .bar-row,
+  #print-root .plan-profile header {
+    break-inside: avoid;
+  }
+
+  #print-root .seg-left {
+    color: #444;
+    background: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.08) 0 4px, transparent 4px 8px);
+  }
+}

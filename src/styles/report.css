@@ -1,0 +1,559 @@
+/* ---------- Gaveta do relatório ---------- */
+.drawer {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  height: min(52%, 460px);
+  border: 1px solid var(--edge);
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+  background: var(--brushed), linear-gradient(180deg, #383b42, #26282d 70px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 -10px 30px rgba(0, 0, 0, 0.45);
+  transform: translateY(calc(100% - 62px));
+  transition: transform 0.6s var(--out);
+}
+
+.drawer.is-open {
+  transform: none;
+}
+
+.is-ready .drawer {
+  animation: drawer-in 0.8s var(--out) 0.35s backwards;
+}
+
+@keyframes drawer-in {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+.drawer-handle {
+  position: absolute;
+  left: 50%;
+  top: -13px;
+  width: 76px;
+  height: 18px;
+  margin-left: -38px;
+  padding: 0;
+  border: 1px solid var(--edge);
+  border-radius: 9px 9px 4px 4px;
+  background: linear-gradient(180deg, #5a5f67, #3a3d44);
+  box-shadow: var(--raised);
+}
+
+.drawer-handle .grip {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 0 auto;
+  border-radius: 3px;
+  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0 2px, rgba(255, 255, 255, 0.12) 2px 4px);
+}
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  height: 62px;
+  padding: 0 16px;
+  flex: none;
+}
+
+.stats {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 11px 5px;
+  border-radius: 7px;
+  background: var(--lcd-bg);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+}
+
+.stat-num {
+  font-family: var(--font-lcd);
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--lcd-text);
+  text-shadow: 0 0 6px var(--lcd-glow);
+}
+
+.stat span {
+  font-size: 0.74rem;
+  color: var(--text-3);
+}
+
+.stat.is-accent .stat-num {
+  color: var(--accent-2);
+  text-shadow: 0 0 8px rgba(255, 179, 71, 0.5);
+}
+
+.tabs {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: var(--pressed);
+}
+
+.tab {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: none;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.86rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+  transition: color 0.2s, background 0.2s;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab.is-on {
+  color: #fff4e6;
+  border-color: var(--edge);
+  background: linear-gradient(180deg, #4a4e56, #33363c);
+  box-shadow: var(--raised), inset 0 -2px 0 var(--accent);
+}
+
+.drawer-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 4px 16px 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #50545b transparent;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.is-on {
+  display: block;
+  animation: tab-in 0.4s var(--out);
+}
+
+@keyframes tab-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+.warnings:empty {
+  display: none;
+}
+
+.warning {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 190, 60, 0.1);
+  border: 1px solid rgba(255, 190, 60, 0.3);
+  font-size: 0.84rem;
+  color: #ffd98a;
+}
+
+.warning svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin-top: 1px;
+}
+
+/* ---------- Tabelas ---------- */
+.cut-table,
+.cost-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  font-size: 0.9rem;
+}
+
+.cut-table th,
+.cost-table th {
+  padding: 4px 10px;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-align: left;
+}
+
+.cut-table td,
+.cost-table td {
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.035);
+  transition: background 0.2s;
+}
+
+.cut-table td:first-child,
+.cost-table td:first-child {
+  border-radius: 7px 0 0 7px;
+}
+
+.cut-table td:last-child,
+.cost-table td:last-child {
+  border-radius: 0 7px 7px 0;
+}
+
+.cut-table tbody tr {
+  cursor: pointer;
+}
+
+.cut-table th:first-child {
+  width: 44px;
+}
+
+.cut-table .name {
+  width: 38%;
+}
+
+.cut-table tbody tr:hover td,
+.cut-table tr.is-hover td {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cut-table tr.is-selected td {
+  background: rgba(255, 122, 26, 0.16);
+}
+
+.cut-table tr.is-selected td:first-child {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.num {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cut-table .num.strong {
+  font-family: var(--font-lcd);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--lcd-text);
+}
+
+.tag {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--g);
+  color: #121314;
+  font-family: var(--font-label);
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cuts {
+  font-family: var(--font-lcd);
+  font-size: 0.84rem;
+  color: var(--text-2);
+}
+
+.cuts.is-45 {
+  color: var(--accent-2);
+}
+
+.legend {
+  margin: 10px 2px 0;
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
+.legend span {
+  display: inline-block;
+  width: 14px;
+  height: 9px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+/* ---------- Plano de barras ---------- */
+.plan-profile {
+  margin: 8px 0 16px;
+}
+
+.plan-profile header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.plan-profile h4 {
+  margin: 0;
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+}
+
+.plan-profile h4 small {
+  font-family: var(--font-lcd);
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.plan-meta {
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+
+.plan-meta b {
+  color: var(--accent-2);
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.bar-name {
+  width: 28px;
+  flex: none;
+  font-family: var(--font-lcd);
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.bar {
+  position: relative;
+  flex: 1;
+  height: 34px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #5c6068, #3c3f45 45%, #2a2c31);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.seg,
+.seg-trim,
+.seg-left,
+.seg-waste {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--g) 80%, #fff), var(--g) 50%, color-mix(in srgb, var(--g) 70%, #000));
+  color: #111;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transform-origin: left center;
+  transition: filter 0.2s, box-shadow 0.2s;
+}
+
+.seg.is-45 {
+  clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 100%, 0 100%);
+}
+
+.seg b {
+  font-family: var(--font-label);
+  font-weight: 700;
+}
+
+.seg i {
+  font-style: normal;
+  font-family: var(--font-lcd);
+}
+
+.seg:hover,
+.seg.is-hover {
+  filter: brightness(1.2);
+}
+
+.seg.is-selected {
+  filter: brightness(1.25) saturate(1.2);
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+.seg-trim,
+.key-trim {
+  left: 0;
+  background: repeating-linear-gradient(-45deg, #8b2d2d 0 3px, #4a1c1c 3px 6px);
+}
+
+.seg-waste,
+.key-waste {
+  background: repeating-linear-gradient(-45deg, #b07a2a 0 3px, #5a3e14 3px 6px);
+}
+
+.seg-left {
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.07) 0 4px, transparent 4px 8px);
+  font-size: 0.74rem;
+  color: var(--text-2);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.seg-left i {
+  font-style: normal;
+  font-family: var(--font-lcd);
+}
+
+.key-left {
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25) 0 3px, transparent 3px 6px);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.is-anim .bar-row .seg {
+  animation: seg-in 0.6s var(--out) backwards;
+  animation-delay: calc(var(--d) * 70ms);
+}
+
+@keyframes seg-in {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+/* ---------- Custos ---------- */
+.cost-table td small {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-3);
+}
+
+.cost-table tfoot td {
+  background: rgba(255, 122, 26, 0.12);
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cost-table tfoot .num {
+  font-family: var(--font-lcd);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--accent-2);
+  text-transform: none;
+}
+
+.cost-table tfoot .sub td {
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.9rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.facts div {
+  padding: 9px 11px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.22);
+  box-shadow: var(--pressed);
+}
+
+.facts dt {
+  font-size: 0.74rem;
+  color: var(--text-3);
+}
+
+.facts dd {
+  margin: 2px 0 0;
+  font-family: var(--font-lcd);
+  font-size: 1.05rem;
+  color: var(--lcd-text);
+}
+
+.stat .short {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .stat .long {
+    display: none;
+  }
+
+  .stat .short {
+    display: inline;
+  }
+}
+
+@media (max-width: 900px) {
+  .drawer {
+    left: 0;
+    right: 0;
+    height: 75%;
+  }
+
+  .drawer-head {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 6px;
+    height: auto;
+    padding: 8px 10px;
+  }
+
+  .drawer {
+    transform: translateY(calc(100% - 96px));
+  }
+
+  .stats {
+    overflow-x: auto;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 0 6px;
+    font-size: 0.78rem;
+  }
+}

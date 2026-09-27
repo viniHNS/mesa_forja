@@ -1,0 +1,13 @@
+{
+  "name": "mesaforja",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Gerador de estruturas de mesas em metalon com preview 3D, lista e plano de corte.",
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes vite@8.3.1",
+    "build": "npx --yes vite@8.3.1 build",
+    "preview": "npx --yes vite@8.3.1 preview",
+    "test": "node --test tests/*.test.js"
+  }
+}

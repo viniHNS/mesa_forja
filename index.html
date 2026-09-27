@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MesaForja · Gerador de mesas em metalon</title>
+    <meta name="description" content="Monte a estrutura da sua mesa em metalon: preview 3D, lista de cortes, plano de barras e custo." />
+    <meta name="theme-color" content="#1b1c1f" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header class="brand">
+          <div class="brand-mark" aria-hidden="true"><span></span></div>
+          <div class="brand-text">
+            <h1>MesaForja</h1>
+            <p>Gerador de mesas em metalon</p>
+          </div>
+          <button type="button" id="btn-reset" class="key key-sq key-ghost" data-icon="reset" title="Restaurar padrão" aria-label="Restaurar padrão"></button>
+        </header>
+        <div class="sidebar-scroll" id="controls"></div>
+      </aside>
+
+      <main class="stage" id="stage">
+        <div class="viewport" id="viewport"></div>
+
+        <div class="hud hud-left">
+          <button type="button" id="btn-assemble" class="hud-btn is-primary" data-icon="play">Montar</button>
+          <label class="hud-explode">
+            <span>Explodir</span>
+            <input type="range" id="explode" class="knob-range" min="0" max="100" value="0" />
+          </label>
+          <button type="button" id="hud-warn" class="hud-btn hud-warn" data-icon="warn" aria-label="Avisos"></button>
+        </div>
+
+        <div class="hud hud-right">
+          <div class="hud-group" role="group" aria-label="Vistas">
+            <button type="button" class="hud-btn is-on" data-view="perspectiva">3D</button>
+            <button type="button" class="hud-btn" data-view="frente">Frente</button>
+            <button type="button" class="hud-btn" data-view="lateral">Lado</button>
+            <button type="button" class="hud-btn" data-view="topo">Topo</button>
+          </div>
+          <div class="hud-group">
+            <button type="button" id="btn-dims" class="hud-btn is-on" data-icon="ruler" title="Cotas" aria-label="Mostrar cotas"></button>
+            <button type="button" id="btn-link" class="hud-btn" data-icon="link" title="Copiar link do projeto" aria-label="Copiar link"></button>
+            <button type="button" id="btn-print" class="hud-btn" data-icon="print" title="Imprimir / salvar PDF">PDF</button>
+          </div>
+        </div>
+
+        <div class="tooltip" id="tooltip"></div>
+        <section class="drawer" id="drawer" aria-label="Relatório"></section>
+        <div class="toast" id="toast" role="status"></div>
+      </main>
+    </div>
+    <div id="print-root"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
