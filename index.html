@@ -23,6 +23,7 @@
             <h1>MesaForja</h1>
             <p>Gerador de mesas em metalon</p>
           </div>
+          <button type="button" id="btn-about" class="key key-sq key-ghost" data-icon="info" title="Sobre o MesaForja" aria-label="Sobre o MesaForja" aria-haspopup="dialog"></button>
           <button type="button" id="btn-reset" class="key key-sq key-ghost" data-icon="reset" title="Restaurar padrão" aria-label="Restaurar padrão"></button>
         </header>
         <div class="sidebar-scroll" id="controls"></div>
@@ -59,6 +60,69 @@
         <div class="toast" id="toast" role="status"></div>
       </main>
     </div>
+    <dialog class="about" id="about" aria-labelledby="about-title">
+      <div class="about-plate">
+        <span class="screw about-screw" data-pos="tl"></span>
+        <span class="screw about-screw" data-pos="tr"></span>
+        <span class="screw about-screw" data-pos="bl"></span>
+        <span class="screw about-screw" data-pos="br"></span>
+
+        <header class="about-head">
+          <div class="brand-mark" aria-hidden="true"><span></span></div>
+          <div>
+            <h2 id="about-title">MesaForja</h2>
+            <p>Gerador de estruturas de mesa em metalon</p>
+          </div>
+          <button type="button" class="key key-sq key-ghost" data-close aria-label="Fechar">×</button>
+        </header>
+
+        <div class="about-body">
+          <p class="about-lead">
+            Planeje uma mesa de metalon antes de comprar o material. Você escolhe as medidas, o perfil
+            e o tipo de união; o MesaForja monta a estrutura em 3D, calcula cada peça e diz quantas
+            barras comprar e quanto vai custar.
+          </p>
+
+          <section>
+            <h3>O que ele faz</h3>
+            <ul class="about-list">
+              <li><b>Preview 3D</b> com os tubos reais: ocos, na chapa escolhida e com o corte de 45° de verdade. Tem vista explodida e animação de montagem.</li>
+              <li><b>Lista de cortes</b> com a medida de cada peça, sempre tirada na ponta maior, e o ângulo de cada ponta.</li>
+              <li><b>Plano de corte</b>: distribui as peças nas barras (2 m por padrão) gastando o mínimo possível, descontando a espessura do disco, o refilo e as emendas.</li>
+              <li><b>Custo estimado</b>, peso do aço, metros de tubo e pontos de solda.</li>
+              <li><b>PDF em A4 deitado</b> para levar à oficina e <b>link</b> que guarda o projeto inteiro.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Como usar</h3>
+            <ol class="about-steps">
+              <li>Escolha um modelo rápido ou digite as medidas da mesa.</li>
+              <li>Defina o perfil, a chapa e o tipo de união (45° ou reto).</li>
+              <li>Confira o plano de barras e ajuste o tamanho da barra e os preços.</li>
+              <li>Gere o PDF ou copie o link do projeto.</li>
+            </ol>
+          </section>
+
+          <p class="about-note">
+            Tudo roda no seu navegador: nenhum dado é enviado para servidor. Os valores são estimativas.
+            Confira as medidas antes de cortar.
+          </p>
+        </div>
+
+        <footer class="about-foot">
+          <div>
+            <span class="about-label">Feito por</span>
+            <strong>Vinicius Hissayoshi Nishida</strong>
+          </div>
+          <nav class="about-links">
+            <a class="key" href="https://github.com/viniHNS" target="_blank" rel="noopener">GitHub</a>
+            <a class="key" href="https://github.com/viniHNS/mesa_forja" target="_blank" rel="noopener">Código-fonte</a>
+          </nav>
+        </footer>
+      </div>
+    </dialog>
+
     <div id="print-root"></div>
     <script type="module" src="/src/main.js"></script>
   </body>

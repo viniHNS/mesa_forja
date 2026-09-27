@@ -1,0 +1,239 @@
+/* ---------- Sobre: placa de metal parafusada sobre o fundo escurecido ---------- */
+.about {
+  width: min(640px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  overflow: visible;
+}
+
+.about::backdrop {
+  background: rgba(8, 9, 11, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.about[open] {
+  animation: about-in 0.5s var(--spring);
+}
+
+.about[open]::backdrop {
+  animation: backdrop-in 0.35s ease;
+}
+
+.about.is-closing {
+  animation: about-out 0.22s ease forwards;
+}
+
+.about.is-closing::backdrop {
+  animation: backdrop-in 0.22s ease reverse forwards;
+}
+
+@keyframes about-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+}
+
+@keyframes about-out {
+  to {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.about-plate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 32px);
+  border: 1px solid var(--edge);
+  border-radius: 16px;
+  background: var(--brushed), linear-gradient(180deg, var(--steel-1), var(--steel-3));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+.about-screw {
+  position: absolute;
+}
+
+.about-screw[data-pos='tl'] { top: 10px; left: 10px; }
+.about-screw[data-pos='tr'] { top: 10px; right: 10px; }
+.about-screw[data-pos='bl'] { bottom: 10px; left: 10px; }
+.about-screw[data-pos='br'] { bottom: 10px; right: 10px; }
+
+.about-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 28px 18px;
+  border-bottom: 1px solid var(--edge);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.about-head > div:nth-child(2) {
+  flex: 1;
+}
+
+.about-head h2 {
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fbf7ee 20%, #a9a499 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-head p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+
+.about-head .key-sq {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.about-body {
+  overflow-y: auto;
+  padding: 20px 28px 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #50545b transparent;
+}
+
+.about-lead {
+  margin: 0 0 18px;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.about-body section {
+  margin-bottom: 18px;
+}
+
+.about-body h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  text-shadow: var(--engrave);
+}
+
+.about-list,
+.about-steps {
+  margin: 0;
+  padding: 12px 14px 12px 34px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.22);
+  box-shadow: var(--pressed);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.about-list li,
+.about-steps li {
+  margin: 4px 0;
+}
+
+.about-list li::marker {
+  color: var(--accent);
+}
+
+.about-list b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-steps li::marker {
+  font-family: var(--font-lcd);
+  color: var(--lcd-text);
+}
+
+.about-note {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: rgba(255, 122, 26, 0.08);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.about-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 28px 26px;
+  border-top: 1px solid var(--edge);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.about-label {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.about-foot strong {
+  display: block;
+  margin-top: 2px;
+  padding: 5px 10px 4px;
+  border-radius: 6px;
+  background: var(--lcd-bg);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.75), 0 1px 0 rgba(255, 255, 255, 0.07);
+  font-family: var(--font-lcd);
+  font-weight: 400;
+  font-size: 1.02rem;
+  color: var(--lcd-text);
+  text-shadow: 0 0 6px var(--lcd-glow);
+}
+
+.about-links {
+  display: flex;
+  gap: 8px;
+}
+
+.about-links .key {
+  flex-direction: row;
+  padding: 8px 14px 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .about-head,
+  .about-body,
+  .about-foot {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media print {
+  .about {
+    display: none !important;
+  }
+}

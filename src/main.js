@@ -88,6 +88,29 @@ $('#btn-reset').addEventListener('click', () => {
   setView('perspectiva');
 });
 
+// Sobre: <dialog> nativo (Esc e foco já vêm prontos). A classe is-closing segura o
+// elemento aberto até a animação de saída terminar.
+const about = $('#about');
+const closeAbout = () => {
+  if (!about.open || about.classList.contains('is-closing')) return;
+  about.classList.add('is-closing');
+  const done = () => {
+    about.classList.remove('is-closing');
+    about.close();
+  };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) done();
+  else about.addEventListener('animationend', done, { once: true });
+};
+$('#btn-about').addEventListener('click', () => about.showModal());
+about.addEventListener('cancel', (e) => {
+  e.preventDefault();
+  closeAbout();
+});
+about.addEventListener('click', (e) => {
+  // clique no fundo escurecido (fora da placa) ou no botão de fechar
+  if (e.target === about || e.target.closest('[data-close]')) closeAbout();
+});
+
 document.addEventListener('mf:reframe', () => setView(viewer.view));
 
 // Tooltip sobre as peças no 3D
