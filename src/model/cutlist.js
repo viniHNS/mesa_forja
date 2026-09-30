@@ -1,9 +1,9 @@
-import { GROUP_ORDER } from './catalog.js';
-
 export const cutLabel = (p) => p.ends.map((e) => `${e.cut}°`).join(' / ');
 
 // Agrupa peças iguais (mesmo nome, perfil, comprimento e cortes) e dá uma letra a cada grupo.
-export function buildCutList(pieces, qty) {
+// `groupOrder`: ordem dos grupos de peças do tipo de projeto (pernas antes do quadro etc.).
+export function buildCutList(pieces, qty, groupOrder = []) {
+  const rank = (g) => (groupOrder.includes(g) ? groupOrder.indexOf(g) : groupOrder.length);
   const map = new Map();
   for (const p of pieces) {
     const cuts = cutLabel(p);
@@ -30,7 +30,7 @@ export function buildCutList(pieces, qty) {
   }
 
   const list = [...map.values()].sort(
-    (a, b) => GROUP_ORDER.indexOf(a.group) - GROUP_ORDER.indexOf(b.group) || b.length - a.length,
+    (a, b) => rank(a.group) - rank(b.group) || b.length - a.length,
   );
   list.forEach((g, i) => {
     g.letter = String.fromCharCode(65 + i);

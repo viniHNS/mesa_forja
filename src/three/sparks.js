@@ -39,7 +39,12 @@ export class Sparks {
         toneMapped: false,
       }),
     );
+    // sem culling porque as posições mudam todo frame; por isso fica invisível (sem draw)
+    // enquanto não há partículas vivas
     this.points.frustumCulled = false;
+    this.points.visible = false;
+    // A luz fica sempre na cena com intensidade 0 em repouso: esconder a luz mudaria a
+    // contagem de luzes e forçaria recompilar os shaders de todos os materiais a cada solda.
     this.light = new THREE.PointLight(0xff8a2a, 0, 1.2, 2);
     this.alive = 0;
   }
@@ -56,11 +61,19 @@ export class Sparks {
     this.light.position.copy(at);
     this.light.intensity = 2.5;
     this.alive = 1.2;
+    this.points.visible = true;
   }
 
   update(dt) {
     if (this.alive <= 0) return;
     this.alive -= dt;
+    if (this.alive <= 0) {
+      // todas as partículas já morreram (vida máxima < alive inicial): para de desenhar
+      this.life.fill(0);
+      this.points.visible = false;
+      this.light.intensity = 0;
+      return;
+    }
     const { pos, vel, col, life } = this;
     for (let i = 0; i < this.max; i++) {
       if (life[i] <= 0) {
@@ -87,5 +100,12 @@ export class Sparks {
     this.points.geometry.attributes.position.needsUpdate = true;
     this.points.geometry.attributes.color.needsUpdate = true;
     this.light.intensity = Math.max(0, this.light.intensity * Math.exp(-dt * 7)) * (0.85 + Math.random() * 0.3);
+  }
+
+  dispose() {
+    this.points.geometry.dispose();
+    this.points.material.map?.dispose();
+    this.points.material.dispose();
+    this.light.dispose();
   }
 }

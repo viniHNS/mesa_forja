@@ -1,7 +1,6 @@
 const active = new Set();
 
 export const ease = {
-  linear: (t) => t,
   outCubic: (t) => 1 - Math.pow(1 - t, 3),
   inOutCubic: (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2),
   outBack: (t) => {
@@ -13,20 +12,19 @@ export const ease = {
 
 export const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+// Devolve um handle com cancel(). Quem guarda o handle deve cancelar o anterior antes de
+// iniciar outro que escreve nas mesmas propriedades.
 export function tween({ duration = 400, delay = 0, easing = ease.outCubic, onStart, onUpdate, onComplete }) {
+  // com movimento reduzido tudo termina no próximo frame, inclusive o atraso (senão a
+  // montagem continuaria escalonada, só que aos saltos)
+  const reduce = reducedMotion();
   const t = {
-    start: performance.now() + delay,
-    duration: reducedMotion() ? 1 : duration,
+    start: performance.now() + (reduce ? 0 : delay),
+    duration: reduce ? 1 : duration,
     easing,
     started: false,
     cancel() {
       active.delete(t);
-    },
-    finish() {
-      active.delete(t);
-      if (!t.started) onStart?.();
-      onUpdate?.(1, 1);
-      onComplete?.();
     },
   };
   t.onStart = onStart;
@@ -38,7 +36,8 @@ export function tween({ duration = 400, delay = 0, easing = ease.outCubic, onSta
 
 export function tickTweens(now = performance.now()) {
   for (const t of [...active]) {
-    if (now < t.start) continue;
+    // um onUpdate/onComplete anterior pode ter cancelado este tween no mesmo frame
+    if (!active.has(t) || now < t.start) continue;
     if (!t.started) {
       t.started = true;
       t.onStart?.();

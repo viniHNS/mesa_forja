@@ -1,0 +1,10004 @@
+{
+ "padrao": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 187,
+   "meters": 7.239999999999999,
+   "weight": 6.492716159999998,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "preset-jantar4": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 187,
+   "meters": 7.239999999999999,
+   "weight": 6.492716159999998,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "preset-jantar6": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -745,
+     0,
+     400
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     745,
+     0,
+     400
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     745,
+     0,
+     -400
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -745,
+     0,
+     -400
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -760,
+     710,
+     400
+    ],
+    "length": 1520,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -760,
+     710,
+     -400
+    ],
+    "length": 1520,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -750,
+     710,
+     -410
+    ],
+    "length": 820,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     750,
+     710,
+     -410
+    ],
+    "length": 820,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-2",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -253.33333333333331,
+     710,
+     -390
+    ],
+    "length": 780,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "reforco-2-2",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     253.33333333333337,
+     710,
+     -390
+    ],
+    "length": 780,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1520,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 820,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 780,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 6,
+    "toBuy": 6,
+    "bars": [
+     {
+      "leftover": 452,
+      "cuts": [
+       [
+        "B",
+        25,
+        1520,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 452,
+      "cuts": [
+       [
+        "B",
+        25,
+        1520,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 329,
+      "cuts": [
+       [
+        "C",
+        25,
+        820,
+        20,
+        null
+       ],
+       [
+        "C",
+        848,
+        820,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 429,
+      "cuts": [
+       [
+        "D",
+        5,
+        780,
+        0,
+        null
+       ],
+       [
+        "D",
+        788,
+        780,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 6,
+     "unit": 27,
+     "total": 162
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 214,
+   "meters": 9.02,
+   "weight": 8.088991679999996,
+   "welds": 12
+  },
+  "warnings": []
+ },
+ "preset-escrivaninha": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -565,
+     0,
+     270
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     565,
+     0,
+     270
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     565,
+     0,
+     -270
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -565,
+     0,
+     -270
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -580,
+     710,
+     270
+    ],
+    "length": 1160,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -580,
+     710,
+     -270
+    ],
+    "length": 1160,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -570,
+     710,
+     -280
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     570,
+     710,
+     -280
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -565,
+     165,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     565,
+     165,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-comp--1",
+    "name": "Travessa · fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -550,
+     165,
+     -270
+    ],
+    "length": 1100,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1160,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 560,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 520,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 1100,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "F",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 520,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 114,
+      "cuts": [
+       [
+        "B",
+        25,
+        1160,
+        20,
+        null
+       ],
+       [
+        "A",
+        1188,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 114,
+      "cuts": [
+       [
+        "B",
+        25,
+        1160,
+        20,
+        null
+       ],
+       [
+        "A",
+        1188,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 194,
+      "cuts": [
+       [
+        "E",
+        5,
+        1100,
+        0,
+        null
+       ],
+       [
+        "A",
+        1108,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 151,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "C",
+        723,
+        560,
+        20,
+        null
+       ],
+       [
+        "C",
+        1286,
+        560,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 426,
+      "cuts": [
+       [
+        "D",
+        5,
+        520,
+        0,
+        null
+       ],
+       [
+        "F",
+        528,
+        520,
+        0,
+        null
+       ],
+       [
+        "F",
+        1051,
+        520,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 187,
+   "meters": 8.879999999999999,
+   "weight": 7.9634419199999975,
+   "welds": 16
+  },
+  "warnings": []
+ },
+ "preset-bancada": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -715,
+     0,
+     270
+    ],
+    "length": 845,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     715,
+     0,
+     270
+    ],
+    "length": 845,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     715,
+     0,
+     -270
+    ],
+    "length": 845,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -715,
+     0,
+     -270
+    ],
+    "length": 845,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -730,
+     860,
+     270
+    ],
+    "length": 1460,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -730,
+     860,
+     -270
+    ],
+    "length": 1460,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -720,
+     860,
+     -280
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     720,
+     860,
+     -280
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-2",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -243.33333333333331,
+     860,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "reforco-2-2",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     243.33333333333337,
+     860,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -715,
+     165,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     715,
+     165,
+     -260
+    ],
+    "length": 520,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-comp-1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -700,
+     165,
+     270
+    ],
+    "length": 1400,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   },
+   {
+    "key": "trav-comp--1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -700,
+     165,
+     -270
+    ],
+    "length": 1400,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 845,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1460,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 560,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 520,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 1400,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "F",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 520,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 8,
+    "toBuy": 8,
+    "bars": [
+     {
+      "leftover": 512,
+      "cuts": [
+       [
+        "B",
+        25,
+        1460,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 512,
+      "cuts": [
+       [
+        "B",
+        25,
+        1460,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 9,
+      "cuts": [
+       [
+        "E",
+        5,
+        1400,
+        0,
+        null
+       ],
+       [
+        "C",
+        1428,
+        560,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 9,
+      "cuts": [
+       [
+        "E",
+        5,
+        1400,
+        0,
+        null
+       ],
+       [
+        "C",
+        1428,
+        560,
+        20,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 299,
+      "cuts": [
+       [
+        "A",
+        5,
+        845,
+        0,
+        null
+       ],
+       [
+        "A",
+        853,
+        845,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 299,
+      "cuts": [
+       [
+        "A",
+        5,
+        845,
+        0,
+        null
+       ],
+       [
+        "A",
+        853,
+        845,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 426,
+      "cuts": [
+       [
+        "D",
+        5,
+        520,
+        0,
+        null
+       ],
+       [
+        "D",
+        528,
+        520,
+        0,
+        null
+       ],
+       [
+        "F",
+        1051,
+        520,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1472,
+      "cuts": [
+       [
+        "F",
+        5,
+        520,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 8,
+     "unit": 27,
+     "total": 216
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 268,
+   "meters": 12.3,
+   "weight": 11.030443199999995,
+   "welds": 20
+  },
+  "warnings": []
+ },
+ "preset-bistro": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -295,
+     0,
+     300
+    ],
+    "length": 995,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     295,
+     0,
+     300
+    ],
+    "length": 995,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     295,
+     0,
+     -300
+    ],
+    "length": 995,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -295,
+     0,
+     -300
+    ],
+    "length": 995,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -310,
+     1010,
+     300
+    ],
+    "length": 620,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -310,
+     1010,
+     -300
+    ],
+    "length": 620,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -300,
+     1010,
+     -310
+    ],
+    "length": 620,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     300,
+     1010,
+     -310
+    ],
+    "length": 620,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -295,
+     315,
+     -290
+    ],
+    "length": 580,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     295,
+     315,
+     -290
+    ],
+    "length": 580,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-comp-1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -280,
+     315,
+     300
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   },
+   {
+    "key": "trav-comp--1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -280,
+     315,
+     -300
+    ],
+    "length": 560,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 995,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 620,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 620,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 580,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 560,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 0,
+      "cuts": [
+       [
+        "A",
+        5,
+        995,
+        0,
+        null
+       ],
+       [
+        "A",
+        1003,
+        995,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 0,
+      "cuts": [
+       [
+        "A",
+        5,
+        995,
+        0,
+        null
+       ],
+       [
+        "A",
+        1003,
+        995,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 106,
+      "cuts": [
+       [
+        "B",
+        25,
+        620,
+        20,
+        null
+       ],
+       [
+        "B",
+        648,
+        620,
+        0,
+        null
+       ],
+       [
+        "C",
+        1271,
+        620,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 186,
+      "cuts": [
+       [
+        "C",
+        25,
+        620,
+        20,
+        null
+       ],
+       [
+        "D",
+        648,
+        580,
+        0,
+        null
+       ],
+       [
+        "D",
+        1231,
+        580,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 869,
+      "cuts": [
+       [
+        "E",
+        5,
+        560,
+        0,
+        null
+       ],
+       [
+        "E",
+        568,
+        560,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 187,
+   "meters": 8.74,
+   "weight": 7.837892159999996,
+   "welds": 16
+  },
+  "warnings": []
+ },
+ "preset-centro": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -465,
+     0,
+     220
+    ],
+    "length": 365,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     465,
+     0,
+     220
+    ],
+    "length": 365,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     465,
+     0,
+     -220
+    ],
+    "length": 365,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -465,
+     0,
+     -220
+    ],
+    "length": 365,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -480,
+     380,
+     220
+    ],
+    "length": 960,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -480,
+     380,
+     -220
+    ],
+    "length": 960,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -470,
+     380,
+     -230
+    ],
+    "length": 460,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     470,
+     380,
+     -230
+    ],
+    "length": 460,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 365,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 960,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 460,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 3,
+    "toBuy": 3,
+    "bars": [
+     {
+      "leftover": 49,
+      "cuts": [
+       [
+        "B",
+        25,
+        960,
+        20,
+        null
+       ],
+       [
+        "B",
+        988,
+        960,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 313,
+      "cuts": [
+       [
+        "C",
+        25,
+        460,
+        20,
+        null
+       ],
+       [
+        "C",
+        488,
+        460,
+        0,
+        null
+       ],
+       [
+        "A",
+        951,
+        365,
+        0,
+        null
+       ],
+       [
+        "A",
+        1319,
+        365,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1259,
+      "cuts": [
+       [
+        "A",
+        5,
+        365,
+        0,
+        null
+       ],
+       [
+        "A",
+        373,
+        365,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 3,
+     "unit": 27,
+     "total": 81
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 133,
+   "meters": 4.3,
+   "weight": 3.8561711999999986,
+   "welds": 8
+  },
+  "warnings": []
+ },
+ "reto": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1140,
+        0,
+        null
+       ],
+       [
+        "C",
+        1148,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1140,
+        0,
+        null
+       ],
+       [
+        "C",
+        1148,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Tampas para pontas abertas",
+     "qty": 4,
+     "unit": 1.5,
+     "total": 6
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 193,
+   "meters": 7.159999999999999,
+   "weight": 6.420973439999997,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "reto-largura": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -550,
+     710,
+     360
+    ],
+    "length": 1100,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -550,
+     710,
+     -360
+    ],
+    "length": 1100,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1100,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1100,
+        0,
+        null
+       ],
+       [
+        "C",
+        1108,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1100,
+        0,
+        null
+       ],
+       [
+        "C",
+        1108,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Tampas para pontas abertas",
+     "qty": 4,
+     "unit": 1.5,
+     "total": 6
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 193,
+   "meters": 7.160000000000001,
+   "weight": 6.420973439999997,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "passante": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "30x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     355
+    ],
+    "length": 725,
+    "sec": {
+     "x": 30,
+     "z": 30
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": false
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "30x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     355
+    ],
+    "length": 725,
+    "sec": {
+     "x": 30,
+     "z": 30
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": false
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "30x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -355
+    ],
+    "length": 725,
+    "sec": {
+     "x": 30,
+     "z": 30
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": false
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "30x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -355
+    ],
+    "length": 725,
+    "sec": {
+     "x": 30,
+     "z": 30
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": false
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -540,
+     710,
+     360
+    ],
+    "length": 1080,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -540,
+     710,
+     -360
+    ],
+    "length": 1080,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -340
+    ],
+    "length": 680,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -340
+    ],
+    "length": 680,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "30x30",
+    "length": 725,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1080,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 680,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "30x30",
+    "count": 2,
+    "toBuy": 2,
+    "bars": [
+     {
+      "leftover": 539,
+      "cuts": [
+       [
+        "A",
+        5,
+        725,
+        0,
+        null
+       ],
+       [
+        "A",
+        733,
+        725,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 539,
+      "cuts": [
+       [
+        "A",
+        5,
+        725,
+        0,
+        null
+       ],
+       [
+        "A",
+        733,
+        725,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "profile": "20x30",
+    "count": 3,
+    "toBuy": 3,
+    "bars": [
+     {
+      "leftover": 209,
+      "cuts": [
+       [
+        "B",
+        5,
+        1080,
+        0,
+        null
+       ],
+       [
+        "D",
+        1088,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 229,
+      "cuts": [
+       [
+        "B",
+        5,
+        1080,
+        0,
+        null
+       ],
+       [
+        "C",
+        1088,
+        680,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1312,
+      "cuts": [
+       [
+        "C",
+        5,
+        680,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 30×30 · 2 m",
+     "qty": 2,
+     "unit": 33,
+     "total": 66
+    },
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 3,
+     "unit": 27,
+     "total": 81
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 199,
+   "meters": 7.120000000000001,
+   "weight": 6.931462079999996,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "trav-h": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -555,
+     165,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     555,
+     165,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-central",
+    "name": "Travessa · central",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -545,
+     165,
+     0
+    ],
+    "length": 1090,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · central",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 1090,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "F",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 6,
+    "toBuy": 6,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 199,
+      "cuts": [
+       [
+        "E",
+        5,
+        1090,
+        0,
+        null
+       ],
+       [
+        "D",
+        1098,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 589,
+      "cuts": [
+       [
+        "F",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "F",
+        708,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 6,
+     "unit": 27,
+     "total": 162
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 214,
+   "meters": 9.73,
+   "weight": 8.725708319999997,
+   "welds": 16
+  },
+  "warnings": []
+ },
+ "trav-u": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -555,
+     215,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     555,
+     215,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-comp--1",
+    "name": "Travessa · fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -540,
+     215,
+     -360
+    ],
+    "length": 1080,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 1080,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "F",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 6,
+    "toBuy": 6,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 209,
+      "cuts": [
+       [
+        "E",
+        5,
+        1080,
+        0,
+        null
+       ],
+       [
+        "D",
+        1088,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 589,
+      "cuts": [
+       [
+        "F",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "F",
+        708,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 6,
+     "unit": 27,
+     "total": 162
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 214,
+   "meters": 9.72,
+   "weight": 8.716740479999997,
+   "welds": 16
+  },
+  "warnings": []
+ },
+ "trav-perimetral": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -555,
+     165,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     555,
+     165,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "F"
+   },
+   {
+    "key": "trav-comp-1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -540,
+     165,
+     360
+    ],
+    "length": 1080,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   },
+   {
+    "key": "trav-comp--1",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -540,
+     165,
+     -360
+    ],
+    "length": 1080,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · frente/fundo",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 1080,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "F",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 7,
+    "toBuy": 7,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 209,
+      "cuts": [
+       [
+        "E",
+        5,
+        1080,
+        0,
+        null
+       ],
+       [
+        "D",
+        1088,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 209,
+      "cuts": [
+       [
+        "E",
+        5,
+        1080,
+        0,
+        null
+       ],
+       [
+        "F",
+        1088,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "F",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 7,
+     "unit": 27,
+     "total": 189
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 241,
+   "meters": 10.799999999999999,
+   "weight": 9.685267199999997,
+   "welds": 18
+  },
+  "warnings": []
+ },
+ "barra-6m-qty3": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 12
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 6
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 6
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 3
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 4,
+    "toBuy": 4,
+    "bars": [
+     {
+      "leftover": 260,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "B",
+        1168,
+        1140,
+        0,
+        null
+       ],
+       [
+        "B",
+        2311,
+        1140,
+        0,
+        null
+       ],
+       [
+        "B",
+        3454,
+        1140,
+        0,
+        null
+       ],
+       [
+        "B",
+        4597,
+        1140,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 374,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ],
+       [
+        "C",
+        1911,
+        740,
+        0,
+        null
+       ],
+       [
+        "C",
+        2654,
+        740,
+        0,
+        null
+       ],
+       [
+        "C",
+        3397,
+        740,
+        0,
+        null
+       ],
+       [
+        "C",
+        4140,
+        740,
+        0,
+        null
+       ],
+       [
+        "C",
+        4883,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 396,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "D",
+        708,
+        700,
+        0,
+        null
+       ],
+       [
+        "D",
+        1411,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        2114,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        2812,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        3510,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        4208,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        4906,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1109,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        1401,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        2099,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        2797,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        3495,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        4193,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 6 m",
+     "qty": 4,
+     "unit": 81,
+     "total": 324
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 12,
+     "unit": 3,
+     "total": 36
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 400,
+   "meters": 21.720000000000002,
+   "weight": 19.478148479999987,
+   "welds": 30
+  },
+  "warnings": []
+ },
+ "emenda": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -1155,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     1155,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     1155,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -1155,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -1170,
+     710,
+     360
+    ],
+    "length": 2340,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -1170,
+     710,
+     -360
+    ],
+    "length": 2340,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -1160,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     1160,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 2340,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 6,
+    "toBuy": 6,
+    "bars": [
+     {
+      "leftover": 59,
+      "cuts": [
+       [
+        "B",
+        25,
+        1170,
+        20,
+        "1/2"
+       ],
+       [
+        "C",
+        1198,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 59,
+      "cuts": [
+       [
+        "B",
+        25,
+        1170,
+        20,
+        "2/2"
+       ],
+       [
+        "C",
+        1198,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 99,
+      "cuts": [
+       [
+        "B",
+        25,
+        1170,
+        20,
+        "1/2"
+       ],
+       [
+        "D",
+        1198,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 104,
+      "cuts": [
+       [
+        "B",
+        25,
+        1170,
+        20,
+        "2/2"
+       ],
+       [
+        "A",
+        1198,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 6,
+     "unit": 27,
+     "total": 162
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 214,
+   "meters": 9.639999999999999,
+   "weight": 8.644997759999995,
+   "welds": 10
+  },
+  "warnings": [
+   "B · Quadro · comprimento (2340 mm) é maior que a barra: sai em 2 partes com emenda soldada."
+  ]
+ },
+ "estoque": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 3,
+    "bars": [
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 89,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "C",
+        1168,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 3,
+     "unit": 27,
+     "total": 81
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 133,
+   "meters": 7.239999999999999,
+   "weight": 6.492716159999998,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "perfis": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "40x40",
+    "axis": "y",
+    "start": [
+     -550,
+     0,
+     350
+    ],
+    "length": 705,
+    "sec": {
+     "x": 40,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "40x40",
+    "axis": "y",
+    "start": [
+     550,
+     0,
+     350
+    ],
+    "length": 705,
+    "sec": {
+     "x": 40,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "40x40",
+    "axis": "y",
+    "start": [
+     550,
+     0,
+     -350
+    ],
+    "length": 705,
+    "sec": {
+     "x": 40,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "40x40",
+    "axis": "y",
+    "start": [
+     -550,
+     0,
+     -350
+    ],
+    "length": 705,
+    "sec": {
+     "x": 40,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x40",
+    "axis": "x",
+    "start": [
+     -570,
+     715,
+     350
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 20,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x40",
+    "axis": "x",
+    "start": [
+     -570,
+     715,
+     -350
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 20,
+     "z": 40
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x40",
+    "axis": "z",
+    "start": [
+     -550,
+     715,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 20,
+     "x": 40
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x40",
+    "axis": "z",
+    "start": [
+     550,
+     715,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 20,
+     "x": 40
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x40",
+    "axis": "z",
+    "start": [
+     0,
+     715,
+     -330
+    ],
+    "length": 660,
+    "sec": {
+     "y": 20,
+     "x": 40
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "trav-lat--1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x20",
+    "axis": "z",
+    "start": [
+     -550,
+     160,
+     -330
+    ],
+    "length": 660,
+    "sec": {
+     "y": 20,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   },
+   {
+    "key": "trav-lat-1",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x20",
+    "axis": "z",
+    "start": [
+     550,
+     160,
+     -330
+    ],
+    "length": 660,
+    "sec": {
+     "y": 20,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "E"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "40x40",
+    "length": 705,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x40",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x40",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x40",
+    "length": 660,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   },
+   {
+    "letter": "E",
+    "name": "Travessa · lateral",
+    "group": "travessa",
+    "profile": "20x20",
+    "length": 660,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   }
+  ],
+  "plan": [
+   {
+    "profile": "40x40",
+    "count": 2,
+    "toBuy": 2,
+    "bars": [
+     {
+      "leftover": 579,
+      "cuts": [
+       [
+        "A",
+        5,
+        705,
+        0,
+        null
+       ],
+       [
+        "A",
+        713,
+        705,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 579,
+      "cuts": [
+       [
+        "A",
+        5,
+        705,
+        0,
+        null
+       ],
+       [
+        "A",
+        713,
+        705,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "profile": "20x40",
+    "count": 3,
+    "toBuy": 3,
+    "bars": [
+     {
+      "leftover": 69,
+      "cuts": [
+       [
+        "B",
+        45,
+        1140,
+        40,
+        null
+       ],
+       [
+        "C",
+        1188,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 69,
+      "cuts": [
+       [
+        "B",
+        45,
+        1140,
+        40,
+        null
+       ],
+       [
+        "C",
+        1188,
+        740,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1332,
+      "cuts": [
+       [
+        "D",
+        5,
+        660,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "profile": "20x20",
+    "count": 1,
+    "toBuy": 1,
+    "bars": [
+     {
+      "leftover": 669,
+      "cuts": [
+       [
+        "E",
+        5,
+        660,
+        0,
+        null
+       ],
+       [
+        "E",
+        668,
+        660,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 40×40 · 2 m",
+     "qty": 2,
+     "unit": 46,
+     "total": 92
+    },
+    {
+     "label": "Barras 20×40 · 2 m",
+     "qty": 3,
+     "unit": 33,
+     "total": 99
+    },
+    {
+     "label": "Barras 20×20 · 2 m",
+     "qty": 1,
+     "unit": 22,
+     "total": 22
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 265,
+   "meters": 8.56,
+   "weight": 15.24527775999999,
+   "welds": 14
+  },
+  "warnings": []
+ },
+ "sem-beiral": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -585,
+     0,
+     390
+    ],
+    "length": 720,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     585,
+     0,
+     390
+    ],
+    "length": 720,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     585,
+     0,
+     -390
+    ],
+    "length": 720,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -585,
+     0,
+     -390
+    ],
+    "length": 720,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -600,
+     735,
+     390
+    ],
+    "length": 1200,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -600,
+     735,
+     -390
+    ],
+    "length": 1200,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -590,
+     735,
+     -400
+    ],
+    "length": 800,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     590,
+     735,
+     -400
+    ],
+    "length": 800,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-3",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -300,
+     735,
+     -380
+    ],
+    "length": 760,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "reforco-2-3",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     735,
+     -380
+    ],
+    "length": 760,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   },
+   {
+    "key": "reforco-3-3",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     300,
+     735,
+     -380
+    ],
+    "length": 760,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 720,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1200,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 800,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 760,
+    "cuts": "90° / 90°",
+    "perTable": 3,
+    "total": 3
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 6,
+    "toBuy": 6,
+    "bars": [
+     {
+      "leftover": 9,
+      "cuts": [
+       [
+        "B",
+        25,
+        1200,
+        20,
+        null
+       ],
+       [
+        "D",
+        1228,
+        760,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 9,
+      "cuts": [
+       [
+        "B",
+        25,
+        1200,
+        20,
+        null
+       ],
+       [
+        "D",
+        1228,
+        760,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 369,
+      "cuts": [
+       [
+        "C",
+        25,
+        800,
+        20,
+        null
+       ],
+       [
+        "C",
+        828,
+        800,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 509,
+      "cuts": [
+       [
+        "D",
+        5,
+        760,
+        0,
+        null
+       ],
+       [
+        "A",
+        768,
+        720,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 549,
+      "cuts": [
+       [
+        "A",
+        5,
+        720,
+        0,
+        null
+       ],
+       [
+        "A",
+        728,
+        720,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1272,
+      "cuts": [
+       [
+        "A",
+        5,
+        720,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 6,
+     "unit": 27,
+     "total": 162
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 214,
+   "meters": 9.159999999999998,
+   "weight": 8.214541439999996,
+   "welds": 14
+  },
+  "warnings": []
+ },
+ "custos": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     },
+     {
+      "cut": 90,
+      "weld": false,
+      "open": true
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 5,
+    "toBuy": 5,
+    "bars": [
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1140,
+        0,
+        null
+       ],
+       [
+        "C",
+        1148,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 149,
+      "cuts": [
+       [
+        "B",
+        5,
+        1140,
+        0,
+        null
+       ],
+       [
+        "C",
+        1148,
+        700,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 594,
+      "cuts": [
+       [
+        "D",
+        5,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        708,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 599,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 1297,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 2 m",
+     "qty": 5,
+     "unit": 27,
+     "total": 135
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 5,
+     "total": 20
+    },
+    {
+     "label": "Tampas para pontas abertas",
+     "qty": 4,
+     "unit": 2,
+     "total": 8
+    },
+    {
+     "label": "Tampo",
+     "qty": 1,
+     "unit": 300,
+     "total": 300
+    }
+   ],
+   "total": 463,
+   "meters": 7.159999999999999,
+   "weight": 6.420973439999997,
+   "welds": 10
+  },
+  "warnings": []
+ },
+ "preco-antigo": {
+  "pieces": [
+   {
+    "key": "perna-0",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-1",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-2",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "perna-3",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "axis": "y",
+    "start": [
+     -555,
+     0,
+     -360
+    ],
+    "length": 695,
+    "sec": {
+     "x": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": false,
+      "foot": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "A"
+   },
+   {
+    "key": "q-comp-1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": 1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-comp--1",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "x",
+    "start": [
+     -570,
+     710,
+     -360
+    ],
+    "length": 1140,
+    "sec": {
+     "y": 30,
+     "z": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "z",
+      "long": -1
+     }
+    ],
+    "letter": "B"
+   },
+   {
+    "key": "q-larg--1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     -560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": -1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "q-larg-1",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     560,
+     710,
+     -370
+    ],
+    "length": 740,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     },
+     {
+      "cut": 45,
+      "weld": true,
+      "plane": "x",
+      "long": 1
+     }
+    ],
+    "letter": "C"
+   },
+   {
+    "key": "reforco-1-1",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "axis": "z",
+    "start": [
+     0,
+     710,
+     -350
+    ],
+    "length": 700,
+    "sec": {
+     "y": 30,
+     "x": 20
+    },
+    "ends": [
+     {
+      "cut": 90,
+      "weld": true
+     },
+     {
+      "cut": 90,
+      "weld": true
+     }
+    ],
+    "letter": "D"
+   }
+  ],
+  "cutList": [
+   {
+    "letter": "A",
+    "name": "Perna",
+    "group": "perna",
+    "profile": "20x30",
+    "length": 695,
+    "cuts": "90° / 90°",
+    "perTable": 4,
+    "total": 4
+   },
+   {
+    "letter": "B",
+    "name": "Quadro · comprimento",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 1140,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "C",
+    "name": "Quadro · largura",
+    "group": "quadro",
+    "profile": "20x30",
+    "length": 740,
+    "cuts": "45° / 45°",
+    "perTable": 2,
+    "total": 2
+   },
+   {
+    "letter": "D",
+    "name": "Reforço do tampo",
+    "group": "reforco",
+    "profile": "20x30",
+    "length": 700,
+    "cuts": "90° / 90°",
+    "perTable": 1,
+    "total": 1
+   }
+  ],
+  "plan": [
+   {
+    "profile": "20x30",
+    "count": 3,
+    "toBuy": 3,
+    "bars": [
+     {
+      "leftover": 689,
+      "cuts": [
+       [
+        "B",
+        25,
+        1140,
+        20,
+        null
+       ],
+       [
+        "B",
+        1168,
+        1140,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 88,
+      "cuts": [
+       [
+        "C",
+        25,
+        740,
+        20,
+        null
+       ],
+       [
+        "C",
+        768,
+        740,
+        0,
+        null
+       ],
+       [
+        "D",
+        1511,
+        700,
+        0,
+        null
+       ],
+       [
+        "A",
+        2214,
+        695,
+        0,
+        null
+       ]
+      ]
+     },
+     {
+      "leftover": 901,
+      "cuts": [
+       [
+        "A",
+        5,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        703,
+        695,
+        0,
+        null
+       ],
+       [
+        "A",
+        1401,
+        695,
+        0,
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "costs": {
+   "lines": [
+    {
+     "label": "Barras 20×30 · 3 m",
+     "qty": 3,
+     "unit": 30,
+     "total": 90
+    },
+    {
+     "label": "Sapatas / ponteiras dos pés",
+     "qty": 4,
+     "unit": 3,
+     "total": 12
+    },
+    {
+     "label": "Consumíveis (eletrodo, disco, tinta)",
+     "qty": 1,
+     "unit": 40,
+     "total": 40
+    }
+   ],
+   "total": 142,
+   "meters": 7.239999999999999,
+   "weight": 6.492716159999998,
+   "welds": 10
+  },
+  "warnings": []
+ }
+}

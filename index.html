@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MesaForja · Gerador de mesas em metalon</title>
-    <meta name="description" content="Monte a estrutura da sua mesa em metalon: preview 3D, lista de cortes, plano de barras e custo." />
+    <title>MesaForja · Gerador de estruturas em metalon</title>
+    <meta name="description" content="Monte a estrutura da sua mesa ou do seu carrinho em metalon: preview 3D, lista de cortes, plano de barras e custo." />
     <meta name="theme-color" content="#1b1c1f" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
           <div class="brand-mark" aria-hidden="true"><span></span></div>
           <div class="brand-text">
             <h1>MesaForja</h1>
-            <p>Gerador de mesas em metalon</p>
+            <p>Gerador de estruturas em metalon</p>
           </div>
           <button type="button" id="btn-about" class="key key-sq key-ghost" data-icon="info" title="Sobre o MesaForja" aria-label="Sobre o MesaForja" aria-haspopup="dialog"></button>
           <button type="button" id="btn-reset" class="key key-sq key-ghost" data-icon="reset" title="Restaurar padrão" aria-label="Restaurar padrão"></button>
@@ -36,7 +36,7 @@
           <button type="button" id="btn-assemble" class="hud-btn is-primary" data-icon="play">Montar</button>
           <label class="hud-explode">
             <span>Explodir</span>
-            <input type="range" id="explode" class="knob-range" min="0" max="100" value="0" />
+            <input type="range" id="explode" class="knob-range" min="0" max="100" value="0" aria-label="Explodir" />
           </label>
           <button type="button" id="hud-warn" class="hud-btn hud-warn" data-icon="warn" aria-label="Avisos"></button>
         </div>
@@ -51,7 +51,7 @@
           <div class="hud-group">
             <button type="button" id="btn-dims" class="hud-btn is-on" data-icon="ruler" title="Cotas" aria-label="Mostrar cotas"></button>
             <button type="button" id="btn-link" class="hud-btn" data-icon="link" title="Copiar link do projeto" aria-label="Copiar link"></button>
-            <button type="button" id="btn-print" class="hud-btn" data-icon="print" title="Imprimir / salvar PDF">PDF</button>
+            <button type="button" id="btn-print" class="hud-btn" data-icon="print" title="Imprimir / salvar PDF" aria-label="Imprimir / salvar PDF"><span class="hud-btn-text">PDF</span></button>
           </div>
         </div>
 
@@ -78,15 +78,15 @@
           <div class="brand-mark" aria-hidden="true"><span></span></div>
           <div>
             <h2 id="about-title">MesaForja</h2>
-            <p>Gerador de estruturas de mesa em metalon</p>
+            <p>Gerador de estruturas em metalon</p>
           </div>
           <button type="button" class="key key-sq key-ghost" data-close aria-label="Fechar">×</button>
         </header>
 
         <div class="about-body">
           <p class="about-lead">
-            Planeje uma mesa de metalon antes de comprar o material. Você escolhe as medidas, o perfil
-            e o tipo de união; o MesaForja monta a estrutura em 3D, calcula cada peça e diz quantas
+            Planeje uma mesa ou um carrinho de metalon antes de comprar o material. Você escolhe as
+            medidas, o perfil e a montagem; o MesaForja monta a estrutura em 3D, calcula cada peça e diz quantas
             barras comprar e quanto vai custar.
           </p>
 
@@ -104,8 +104,8 @@
           <section>
             <h3>Como usar</h3>
             <ol class="about-steps">
-              <li>Escolha um modelo rápido ou digite as medidas da mesa.</li>
-              <li>Defina o perfil, a chapa e o tipo de união (45° ou reto).</li>
+              <li>Escolha o tipo de projeto (mesa ou carrinho) e um modelo rápido, ou digite as medidas.</li>
+              <li>Defina o perfil, a chapa e a montagem (união a 45° ou reta, bandejas, rodízios, alça).</li>
               <li>Confira o plano de barras e ajuste o tamanho da barra e os preços.</li>
               <li>Gere o PDF ou copie o link do projeto.</li>
             </ol>

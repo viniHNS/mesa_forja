@@ -6,12 +6,15 @@ function setIn(obj, [key, ...rest], value) {
   return copy;
 }
 
-export function createStore(initial) {
+// `rule(path)`: regra do schema daquele caminho (ou undefined). Os controles da sidebar
+// tiram dela os limites, para não repetir as faixas que a validação já conhece.
+export function createStore(initial, { rule = () => undefined } = {}) {
   let state = initial;
   const subs = new Set();
   const emit = () => subs.forEach((fn) => fn(state));
   return {
     get: () => state,
+    rule,
     set(path, value) {
       if (getIn(state, path) === value) return;
       state = setIn(state, path.split('.'), value);

@@ -3,13 +3,15 @@ import { CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
 const fmt = (v) => `${Math.round(v).toLocaleString('pt-BR')} mm`;
 
-// Cotas (em mm, dentro do grupo escalado da mesa): comprimento, largura e altura.
+// Cotas (em mm, dentro do grupo escalado do projeto), vindas de model.dimLines.
 export class Dimensions {
   constructor() {
     this.group = new THREE.Group();
     this.material = new THREE.LineBasicMaterial({ color: 0xffb347, transparent: true, opacity: 0.85 });
     this.visible = true;
-    this.labels = [];
+    this.labels = []; // lidos pelo Viewer.snapshot() para desenhar os textos na imagem
+    this.segments = []; // pares de pontos (mm) das linhas, redesenhados no snapshot do PDF
+    this.lines = null;
   }
 
   line(a, b, tickDir, pts) {
@@ -19,9 +21,9 @@ export class Dimensions {
     pts.push(b.clone().sub(t), b.clone().add(t));
   }
 
-  label(text, at, cls = '') {
+  label(text, at) {
     const el = document.createElement('div');
-    el.className = `dim-label ${cls}`;
+    el.className = 'dim-label';
     el.textContent = text;
     const obj = new CSS2DObject(el);
     obj.position.copy(at);
@@ -30,35 +32,33 @@ export class Dimensions {
     this.labels.push(obj);
   }
 
-  update(d) {
+  // descarta as linhas e tira os rótulos (o CSS2DObject remove o próprio elemento do DOM
+  // ao sair do grupo)
+  reset() {
     this.group.children.forEach((c) => c.geometry?.dispose());
     this.group.clear();
     this.labels = [];
-    const gap = 110;
-    const V = (x, y, z) => new THREE.Vector3(x, y, z);
+    this.segments = [];
+    this.lines = null;
+  }
+
+  // Cada cota: linha de `from` a `to` com traços nas pontas (direção `tick`), linhas de
+  // chamada `ext` (pares de pontos) e o valor em mm no meio. Quem monta é o tipo de projeto.
+  update(dimLines = []) {
+    this.reset();
+    const V = (a) => new THREE.Vector3(...a);
     const pts = [];
-    const { L, W, H } = d;
-
-    // comprimento, no chão à frente
-    const zf = W / 2 + gap;
-    this.line(V(-L / 2, 1, zf), V(L / 2, 1, zf), V(0, 0, 1), pts);
-    pts.push(V(-L / 2, 1, W / 2 - d.O), V(-L / 2, 1, zf + 20), V(L / 2, 1, W / 2 - d.O), V(L / 2, 1, zf + 20));
-    this.label(fmt(L), V(0, 1, zf));
-
-    // largura, no chão à direita
-    const xr = L / 2 + gap;
-    this.line(V(xr, 1, -W / 2), V(xr, 1, W / 2), V(1, 0, 0), pts);
-    pts.push(V(L / 2 - d.O, 1, -W / 2), V(xr + 20, 1, -W / 2), V(L / 2 - d.O, 1, W / 2), V(xr + 20, 1, W / 2));
-    this.label(fmt(W), V(xr, 1, 0));
-
-    // altura, na quina traseira direita
-    const zb = -W / 2;
-    this.line(V(xr, 0, zb), V(xr, H, zb), V(1, 0, 0), pts);
-    pts.push(V(L / 2, H, zb), V(xr + 20, H, zb));
-    this.label(fmt(H), V(xr, H / 2, zb), 'is-vertical');
-
+    for (const d of dimLines) {
+      const a = V(d.from);
+      const b = V(d.to);
+      this.line(a, b, V(d.tick ?? [0, 0, 0]), pts);
+      for (const [p, q] of d.ext ?? []) pts.push(V(p), V(q));
+      this.label(fmt(d.value), a.clone().lerp(b, 0.5));
+    }
+    this.segments = pts;
+    if (!pts.length) return;
     const geo = new THREE.BufferGeometry().setFromPoints(pts);
-    const lines = new THREE.LineSegments(geo, this.material);
+    const lines = (this.lines = new THREE.LineSegments(geo, this.material));
     lines.visible = this.visible;
     this.group.add(lines);
   }
@@ -66,5 +66,15 @@ export class Dimensions {
   setVisible(v) {
     this.visible = v;
     this.group.children.forEach((c) => (c.visible = v));
+  }
+
+  // só as linhas (o snapshot do PDF esconde as do WebGL e desenha as suas por cima)
+  setLinesVisible(v) {
+    if (this.lines) this.lines.visible = v && this.visible;
+  }
+
+  dispose() {
+    this.reset();
+    this.material.dispose();
   }
 }

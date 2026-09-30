@@ -13,7 +13,9 @@
   border-radius: 14px 14px 0 0;
   background: var(--brushed), linear-gradient(180deg, #383b42, #26282d 70px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 -10px 30px rgba(0, 0, 0, 0.45);
-  transform: translateY(calc(100% - 62px));
+  /* faixa que aparece com a gaveta fechada; report.js lê para o 3D enquadrar acima dela */
+  --peek: 62px;
+  transform: translateY(calc(100% - var(--peek)));
   transition: transform 0.6s var(--out);
 }
 
@@ -153,6 +155,10 @@
   animation: tab-in 0.4s var(--out);
 }
 
+.tab-panel:focus-visible {
+  outline-offset: -2px;
+}
+
 @keyframes tab-in {
   from {
     opacity: 0;
@@ -245,6 +251,25 @@
 
 .cut-table tr.is-selected td:first-child {
   box-shadow: inset 3px 0 0 var(--accent);
+}
+
+/* foco do teclado na linha: contorno desenhado nas células (outline em <tr> falha em
+   alguns navegadores) */
+.cut-table tbody tr:focus-visible {
+  outline: none;
+}
+
+.cut-table tbody tr:focus-visible td {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 2px 0 var(--accent-2), inset 0 -2px 0 var(--accent-2);
+}
+
+.cut-table tbody tr:focus-visible td:first-child {
+  box-shadow: inset 2px 0 0 var(--accent-2), inset 0 2px 0 var(--accent-2), inset 0 -2px 0 var(--accent-2);
+}
+
+.cut-table tbody tr:focus-visible td:last-child {
+  box-shadow: inset -2px 0 0 var(--accent-2), inset 0 2px 0 var(--accent-2), inset 0 -2px 0 var(--accent-2);
 }
 
 .num {
@@ -413,6 +438,13 @@
   box-shadow: inset 0 0 0 2px #fff;
 }
 
+/* a barra tem overflow: hidden, então o contorno do foco fica para dentro */
+.seg:focus-visible {
+  z-index: 1;
+  outline: 2px solid var(--accent-2);
+  outline-offset: -2px;
+}
+
 .seg-trim,
 .key-trim {
   left: 0;
@@ -439,6 +471,23 @@
 .seg-left i {
   font-style: normal;
   font-family: var(--font-lcd);
+}
+
+/* sobra estreita: primeiro sai a palavra, depois o número (o title continua com tudo) */
+.seg-left {
+  container-type: inline-size;
+}
+
+@container (max-width: 86px) {
+  .seg-left i span {
+    display: none;
+  }
+}
+
+@container (max-width: 34px) {
+  .seg-left i {
+    display: none;
+  }
 }
 
 .key-left {
@@ -544,7 +593,7 @@
   }
 
   .drawer {
-    transform: translateY(calc(100% - 96px));
+    --peek: 96px;
   }
 
   .stats {

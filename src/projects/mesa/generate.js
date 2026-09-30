@@ -1,4 +1,4 @@
-import { getProfile } from './catalog.js';
+import { getProfile } from '../../model/catalog.js';
 
 // Sistema de coordenadas (mm): X = comprimento, Y = altura (chão = 0), Z = largura (frente = +Z).
 // Cada peça é um tubo reto: começa em `start` (centro da seção na ponta de menor coordenada)
@@ -9,15 +9,12 @@ import { getProfile } from './catalog.js';
 const straight = (extra = {}) => ({ cut: 90, weld: true, ...extra });
 const miter = (plane, long) => ({ cut: 45, weld: true, plane, long });
 
-export function resolveProfiles(s) {
-  return s.sameProfile
-    ? { frame: s.profile, leg: s.profile, stretcher: s.profile }
-    : { frame: s.frameProfile, leg: s.legProfile, stretcher: s.stretcherProfile };
-}
-
-export function generateTable(s) {
+/**
+ * @param s   parâmetros da mesa (state.projects.mesa)
+ * @param ctx { profiles: { leg, frame, stretcher } } já resolvidos (mesmo perfil ou por função)
+ */
+export function generateMesa(s, { profiles: prof }) {
   const warnings = [];
-  const prof = resolveProfiles(s);
   const fp = getProfile(prof.frame);
   const lp = getProfile(prof.leg);
   const sp = getProfile(prof.stretcher);
@@ -205,15 +202,41 @@ export function generateTable(s) {
     }
   }
 
+  const panels = T > 0 ? [{ key: 'tampo', name: 'Tampo', size: [L, T, W], center: [0, yTop + T / 2, 0], material: s.topMaterial }] : [];
+
   return {
     pieces,
-    top: { size: [L, T, W], center: [0, yTop + T / 2, 0] },
+    panels,
     feet: pieces.filter((p) => p.group === 'perna').map((p) => ({ x: p.start[0], z: p.start[2], sx: lx, sz: lz })),
+    // size: caixa que envolve tudo (enquadramento); base: pegada da estrutura (vista explodida)
+    bounds: { size: [L, H, W], base: [fL, fW] },
+    dimLines: dimLines({ L, W, H, O }),
     dims: { L, W, H, T, O, fL, fW, yTop, lx, lz, qw, hq, legLen },
-    profiles: prof,
     welds: Math.round(welds),
     openEnds,
-    feetCount: 4,
     warnings,
   };
+}
+
+// Cotas: comprimento e largura no chão, à frente e à direita (com linhas de chamada a partir
+// da estrutura), e altura na quina traseira direita.
+function dimLines({ L, W, H, O }) {
+  const gap = 110;
+  const zf = W / 2 + gap;
+  const xr = L / 2 + gap;
+  const zb = -W / 2;
+  return [
+    {
+      from: [-L / 2, 1, zf], to: [L / 2, 1, zf], tick: [0, 0, 1], value: L,
+      ext: [[[-L / 2, 1, W / 2 - O], [-L / 2, 1, zf + 20]], [[L / 2, 1, W / 2 - O], [L / 2, 1, zf + 20]]],
+    },
+    {
+      from: [xr, 1, -W / 2], to: [xr, 1, W / 2], tick: [1, 0, 0], value: W,
+      ext: [[[L / 2 - O, 1, -W / 2], [xr + 20, 1, -W / 2]], [[L / 2 - O, 1, W / 2], [xr + 20, 1, W / 2]]],
+    },
+    {
+      from: [xr, 0, zb], to: [xr, H, zb], tick: [1, 0, 0], value: H, vertical: true,
+      ext: [[[L / 2, H, zb], [xr + 20, H, zb]]],
+    },
+  ];
 }

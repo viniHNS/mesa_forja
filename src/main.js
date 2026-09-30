@@ -1,6 +1,6 @@
 import './styles/main.css';
 import { createStore } from './state/store.js';
-import { DEFAULTS } from './state/defaults.js';
+import { DEFAULTS, ruleFor } from './state/defaults.js';
 import { loadState, readLink, readLocal, saveState, sameProject } from './state/persist.js';
 import { derive } from './model/index.js';
 import { Viewer } from './three/viewer.js';
@@ -8,13 +8,16 @@ import { Sidebar } from './ui/sidebar.js';
 import { Report } from './ui/report.js';
 import { printReport } from './ui/print.js';
 import { ICONS } from './ui/icons.js';
-import { fmt } from './ui/dom.js';
-import { profileLabel } from './model/catalog.js';
+import { esc, fmt } from './ui/dom.js';
+import { perfilText } from './ui/options.js';
+
+// o store nunca muta o estado, mas o padrão é compartilhado: cada uso ganha uma cópia
+const defaults = () => structuredClone(DEFAULTS);
 
 const $ = (sel) => document.querySelector(sel);
 
 const initial = loadState();
-const store = createStore(initial.state);
+const store = createStore(initial.state, { rule: ruleFor });
 
 // Projeto aberto por link: fica só na URL até a primeira edição, para não apagar o
 // projeto que o visitante tinha salvo neste navegador.
@@ -30,10 +33,24 @@ const select = (gid) => {
   viewer.rig.setSelected(gid);
   report.setSelected(gid);
 };
+// Altura do 3D coberta embaixo: a gaveta e, em telas até 1180 px, o grupo de vistas do HUD,
+// que fica logo acima dela (no celular ele some com a gaveta aberta). Mesmas faixas do
+// stage.css. O 3D enquadra o projeto e as cotas só na área que sobra.
+const hudBottom = { narrow: matchMedia('(max-width: 900px)'), mid: matchMedia('(max-width: 1180px)') };
+let drawer = { open: false, covered: 0 };
+const updateInset = () => {
+  const { open, covered } = drawer;
+  const hudShown = hudBottom.mid.matches && !(open && hudBottom.narrow.matches);
+  viewer.setBottomInset(covered + (hudShown ? $('.hud-right').offsetHeight + 14 : 0));
+};
+Object.values(hudBottom).forEach((mq) => mq.addEventListener('change', updateInset));
 const report = new Report($('#drawer'), {
   onSelect: select,
   onHover: (gid) => viewer.rig.setHover(gid),
-  onToggle: (open, covered) => viewer.setBottomInset(open ? covered : 0),
+  onToggle: (open, covered) => {
+    drawer = { open, covered };
+    updateInset();
+  },
 });
 
 // ---- HUD
@@ -89,10 +106,14 @@ $('#btn-link').addEventListener('click', async () => {
   }
 });
 
+// Reenquadrar depende do tamanho novo da mesa, que só existe depois do render agendado
+// pelo store. Um rAF pedido depois do store.* roda depois desse render.
+const afterRender = (fn) => requestAnimationFrame(fn);
+
 $('#btn-reset').addEventListener('click', () => {
   if (!confirm('Voltar todas as opções para o padrão?')) return;
-  store.replace({ ...DEFAULTS, prices: { ...DEFAULTS.prices }, owned: {} });
-  setView('perspectiva');
+  store.replace(defaults());
+  afterRender(() => setView('perspectiva'));
 });
 
 // Sobre: <dialog> nativo (Esc e foco já vêm prontos). A classe is-closing segura o
@@ -118,7 +139,8 @@ about.addEventListener('click', (e) => {
   if (e.target === about || e.target.closest('[data-close]')) closeAbout();
 });
 
-document.addEventListener('mf:reframe', () => setView(viewer.view));
+// disparado pelos presets da sidebar logo depois do store.merge
+document.addEventListener('mf:reframe', () => afterRender(() => setView(viewer.view)));
 
 // Tooltip sobre as peças no 3D
 const tip = $('#tooltip');
@@ -130,7 +152,7 @@ viewer.addEventListener('hover', (e) => {
     return;
   }
   const r = $('#stage').getBoundingClientRect();
-  tip.innerHTML = `<b>${piece.letter}</b> ${piece.name}<span>${profileLabel(piece.profile)} · ${fmt(piece.length)} mm · ${piece.ends.map((e) => e.cut + '°').join(' / ')}</span>`;
+  tip.innerHTML = `<b>${esc(piece.letter)}</b> ${esc(piece.name)}<span>${esc(perfilText(piece.profile))} · ${fmt(piece.length)} mm · ${piece.ends.map((e) => esc(e.cut) + '°').join(' / ')}</span>`;
   tip.style.transform = `translate(${x - r.left + 14}px, ${y - r.top + 14}px)`;
   tip.classList.add('is-on');
 });
@@ -145,14 +167,20 @@ let current = null;
 let queued = false;
 let saveTimer;
 let lastStructure = '';
+let lastType = null;
 
 function render(first = false) {
   queued = false;
   const state = store.get();
+  // outro tipo de projeto: as peças antigas (e a seleção) não fazem mais sentido
+  const typeChanged = !first && state.type !== lastType;
+  if (typeChanged && selected) select(null);
   current = derive(state);
-  const structure = current.model.pieces.map((p) => p.key).join();
-  viewer.update(current, state, { animate: !first && structure !== lastStructure, reframe: first });
+  const structure = `${state.type}:${current.model.pieces.map((p) => p.key).join()}`;
+  viewer.update(current, state, { animate: !first && !typeChanged && structure !== lastStructure, reframe: first || typeChanged });
+  if (typeChanged) viewer.rig.playAssembly();
   lastStructure = structure;
+  lastType = state.type;
   sidebar.update(state, current);
   report.render(current, state);
   $('#hud-warn').classList.toggle('is-on', current.warnings.length > 0);
@@ -207,8 +235,7 @@ function applyProject(state, { fromLink }) {
   store.replace(state);
   applying = false;
   viewingLink = fromLink;
-  // o render está agendado no próximo frame; este callback roda logo depois dele
-  requestAnimationFrame(() => {
+  afterRender(() => {
     setView(viewer.view);
     viewer.rig.playAssembly();
   });
@@ -223,7 +250,7 @@ window.addEventListener('hashchange', () => {
 });
 
 backBtn.addEventListener('click', () => {
-  applyProject(readLocal() ?? { ...DEFAULTS }, { fromLink: false });
+  applyProject(readLocal() ?? defaults(), { fromLink: false });
   hideLinkNotice();
 });
 $('#link-close').addEventListener('click', hideLinkNotice);

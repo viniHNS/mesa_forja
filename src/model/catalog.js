@@ -18,16 +18,17 @@ export const PROFILES = [
   { id: '50x50', a: 50, b: 50 },
 ];
 
-// Preço de referência por barra de 2 m, chapa 18 (editável na interface)
-export const DEFAULT_PRICES = {
-  '20x20': 22,
-  '20x30': 27,
-  '30x30': 33,
-  '20x40': 33,
-  '30x40': 40,
-  '40x40': 46,
-  '30x50': 50,
-  '50x50': 58,
+// Preço de referência por metro, chapa 18 (editável na interface). O custo de cada barra é
+// preço/m × tamanho da barra, então trocar o tamanho da barra não exige rever os preços.
+export const DEFAULT_METER_PRICES = {
+  '20x20': 11,
+  '20x30': 13.5,
+  '30x30': 16.5,
+  '20x40': 16.5,
+  '30x40': 20,
+  '40x40': 23,
+  '30x50': 25,
+  '50x50': 29,
 };
 
 const STEEL_DENSITY = 7.85e-6; // kg/mm³
@@ -37,7 +38,7 @@ export const isRect = (id) => {
   const p = getProfile(id);
   return p.a !== p.b;
 };
-export const profileLabel = (id) => id.replace('x', '×');
+export const profileLabel = (id) => String(id).replace('x', '×');
 export const wallOf = (chapa) => (CHAPAS.find((c) => c.id === chapa) ?? CHAPAS[1]).mm;
 
 export function kgPerMeter(profileId, chapa) {
@@ -60,23 +61,20 @@ export const TOP_MATERIALS = [
   { id: 'branco', label: 'MDF branco', swatch: '#f1eee7' },
   { id: 'preto', label: 'MDF preto', swatch: '#232325' },
   { id: 'vidro', label: 'Vidro', swatch: 'linear-gradient(135deg,#e2f4ef,#8fbfb3 60%,#cfe9e2)' },
+  // no 3D a chapa leva a mesma pintura do metalon
+  { id: 'chapa', label: 'Chapa de aço', swatch: 'linear-gradient(135deg,#8d9197,#5d6168 55%,#a3a7ad)' },
 ];
+
+// Rodízios por diâmetro nominal da roda. d = diâmetro da roda, w = largura da roda,
+// h = altura do chão até o topo da placa (soma na altura do projeto), plate = lado da placa.
+export const CASTERS = [
+  { id: '3', label: '3"', d: 75, w: 24, h: 100, plate: 60 },
+  { id: '4', label: '4"', d: 100, w: 28, h: 128, plate: 70 },
+  { id: '5', label: '5"', d: 125, w: 32, h: 155, plate: 80 },
+];
+export const getCaster = (id) => CASTERS.find((c) => c.id === id) ?? CASTERS[1];
 
 export const BAR_PRESETS = [1000, 1500, 2000, 3000, 6000];
 
-export const TABLE_PRESETS = [
-  { id: 'jantar4', label: 'Jantar 4', sub: '120×80', values: { length: 1200, width: 800, height: 750, stretcher: 'nenhuma', braces: 1, overhang: 30 } },
-  { id: 'jantar6', label: 'Jantar 6', sub: '160×90', values: { length: 1600, width: 900, height: 750, stretcher: 'nenhuma', braces: 2, overhang: 40 } },
-  { id: 'escrivaninha', label: 'Escrivaninha', sub: '120×60', values: { length: 1200, width: 600, height: 750, stretcher: 'u', stretcherHeight: 150, braces: 1, overhang: 20 } },
-  { id: 'bancada', label: 'Bancada', sub: '150×60', values: { length: 1500, width: 600, height: 900, stretcher: 'perimetral', stretcherHeight: 150, braces: 2, overhang: 20 } },
-  { id: 'bistro', label: 'Bistrô', sub: '70×70', values: { length: 700, width: 700, height: 1050, stretcher: 'perimetral', stretcherHeight: 300, braces: 0, overhang: 40 } },
-  { id: 'centro', label: 'Centro', sub: '100×50', values: { length: 1000, width: 500, height: 420, stretcher: 'nenhuma', braces: 0, overhang: 20 } },
-];
-
-export const GROUPS = {
-  perna: { label: 'Pernas', color: '#ff8a3d' },
-  quadro: { label: 'Quadro', color: '#4fb3ff' },
-  reforco: { label: 'Reforços', color: '#c49bff' },
-  travessa: { label: 'Travessas', color: '#5fe0a0' },
-};
-export const GROUP_ORDER = ['perna', 'quadro', 'reforco', 'travessa'];
+// Presets, grupos de peças (cores) e opções de montagem são de cada tipo de projeto:
+// ficam em src/projects/<id>/.

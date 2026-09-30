@@ -20,6 +20,10 @@ export function h(tag, attrs = {}, ...children) {
   return el;
 }
 
+// Escapa texto variável antes de ir para innerHTML/template string (conteúdo e atributos)
+const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ESC[c]);
+
 const nf = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 });
 const money = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
 export const fmt = (v) => nf.format(v);
